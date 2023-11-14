@@ -1,0 +1,6 @@
+<h1>Created proxy</h1>
+{% for conn in last_connections %}
+<a href="{% url 'create_proxy' %}?url={{ conn.origin_url }}">{{conn.origin_url}}</a>
+<br>
+<br>
+{% endfor %}
